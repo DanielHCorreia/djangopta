@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Django</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css/home.css' %}">
+    <script src='main.js'></script>
+</head>
+<body class="background">
+<h1 align="center"> Hello World !</h1>
+{% for pessoa in pessoas %}
+    <h2> Nome: {{ pessoa.name }}</h2>
+    <p> CPF {{pessoa.cpf}} </p>
+    {% if pessoa.email  %}
+        <p>E-mail: {{pessoa.email}} </p>
+    {% endif %}
+{% endfor %}
+
+</body>
+</html>
