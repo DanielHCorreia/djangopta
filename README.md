@@ -1,2 +1,1 @@
-# djangopta
-# teste
+# Django PTA
