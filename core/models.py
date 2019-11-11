@@ -17,7 +17,7 @@ class Pessoa(models.Model):
     def __str__(self):
         return self.name
 
-class Cliente(models.Model):
+""" class Cliente(models.Model):
     nome = models.CharField('Nome completo',max_length=100)
     nomeResumido = models.CharField("Nome resumido",max_length=50)
     cpf = models.IntegerField('CPF',primary_key=True)
@@ -29,3 +29,5 @@ class Cliente(models.Model):
     #    verbose_name_plural 'Clientes'
     def __str__(self):
         return self.nome
+
+         """

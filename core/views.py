@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import Pessoa
-from .models import Cliente
+# from .models import Cliente 
 # Create your views here.
 
 
