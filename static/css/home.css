@@ -20,6 +20,34 @@
 
 }
 
+body {margin:0;}
+
+.menu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#8B002A;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.li {
+  float: left;
+}
+
+.li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.li a:hover{
+  background-color: #ff952b;
+}
 
 
 .imagem{
@@ -41,9 +69,15 @@
 .perfil{
     height: 160px;
     width: 160px;
-    margin-left: 5%;
+    margin-left: 30%;
+    margin-top: 7%;
     border-radius: 100%;
     float:left;
+}
+
+.marginTop{
+    margin-top:10%;
+
 }
 
 .section{
@@ -161,6 +195,7 @@ color:red;
 
 .parallaxAssist{
     height: 450px;
-    background-color:rgb(216, 243, 253);
+    /* background-color:rgb(216, 243, 253); a*/
+    background-color:#FFDCC8;
     font-size: 25px;
 }
