@@ -7,7 +7,6 @@
     <title>Django</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css\home.css' %}">
-     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> -->
     <script src="{% static 'js/main.js' %}"></script>
 </head>
 
@@ -22,7 +21,7 @@
                  <a href="#home" class="w3-button w3-bar-item" onclick="contato()">Contato</a>
         </nav> -->
 
-
+        <nav>
         <ul class="menu">
             <li class="li"><a href="#home">Início</a></li>
             <li class="li"><a href="#hobbies">Hobbies</a></li>
@@ -30,11 +29,12 @@
             <li class="li"><a href="#pets">Meus PETS</a></li>
             <li class="li"><a href="#contato">Contato</a></li>
           </ul>
+        </nav>
           <br>
 
         <div class="section" id="home">
             <img src="{% static 'imagens/perfil1.JFIF' %}" class="perfil">
-            <h1 class="marginTop"> Olá :) <br> meu nome é <b>Daniel</b></h1>
+            <h1 class="marginTop"> Olá :) <br> meu nome é <div class="colorName">Daniel</div> </h1>
         </div>
 
 
@@ -90,13 +90,30 @@
 
 
 <div class="parallax3"></div>
-<div class="parallaxAssist" align="Center" id="pets">
-    <b>-> Meus PETS</b>
-    <div>
+<div class="parallaxAssist" align="left" id="pets">
+    <b align="Center">-> Meus PETS</b>
+  <!--   <div>
         <img src="{% static 'imagens/gato1.JFIF' %}" class="imagem" alt="Gata de cor preto, grande e peludo">
         <img src="{% static 'imagens/gato2.JFIF' %}" class="imagem" alt="Gata de cor cinza, peluda e bonita (com cara de mau)">
 
-    </div>
+    </div> -->
+<div class="cards">
+    <img src="{% static 'imagens/pretinha1.jpg' %}" alt="Gata preta">
+    <img src="{% static 'imagens/pretinha2.jpg' %}" alt="Gata preta">
+    <img src="{% static 'imagens/pretinha3.jpg' %}" alt="Gata preta">
+    <img src="{% static 'imagens/pretinha4.jpeg' %}" alt="Gata preta">
+    <img src="{% static 'imagens/lady1.jpg' %}" alt="Gata cinza">
+    <img src="{% static 'imagens/lady2.jpg' %}" alt="Gata cinza">
+    <img src="{% static 'imagens/lady3.jpg' %}" alt="Gata cinza">
+    <img src="{% static 'imagens/lady4.jpg' %}" alt="Gata cinza">
+</div>
+
+</div>
+
+
+
+
+
 
 </div>
 

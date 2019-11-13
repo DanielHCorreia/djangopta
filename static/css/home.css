@@ -41,9 +41,9 @@ body {margin:0;}
   display: block;
   color: white;
   text-align: center;
-  padding: 10px 16px;
+  padding: 10px 13px;
   text-decoration: none;
-  font-size:17px;
+  font-size:15px;
 }
 
 .li a:hover{
@@ -91,7 +91,12 @@ body {margin:0;}
 
 .marginTop{
     margin-top:10%;
+    font-size:30px;
+}
 
+.colorName{
+  color:blue;
+  font-size:30px;
 }
 
 .section{
@@ -142,10 +147,10 @@ img:hover {
 
 
 
-#TextInImg
+/* #TextInImg
 
 
-#ParallaxEffect
+#ParallaxEffect */
 
 /* #compatibility
   /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed
@@ -158,10 +163,7 @@ img:hover {
 
  */
 
-/*  bug, ta ignorando o primeiro css após esse comentário acima */
-.parallax{
-color:red;
-}
+
 
 
 
@@ -206,10 +208,27 @@ color:red;
     background-size: cover;
 }
 
-
+/* #parallaxSection */
 .parallaxAssist{
     height: 450px;
+    height: 100%;
     /* background-color:rgb(216, 243, 253); a*/
     background-color:#FFDCC8;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  max-height: 200vh;
+}
+.cards img {
+  margin: 5px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  /* max-width: 23vw; */
+  max-width: 20vw;
 }
