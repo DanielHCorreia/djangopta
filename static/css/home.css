@@ -195,26 +195,26 @@ img:hover {
 }
 
 .parallax4 {
-    /* The image used */
-    background-image: url("../imagens/p1.png");
+  /* The image used */
+  background-image: url("../imagens/p1.png");
 
-    /* Set a specific height */
-    min-height: 500px;
+  /* Set a specific height */
+  min-height: 500px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* #parallaxSection */
 .parallaxAssist{
-    height: 450px;
-    height: 100%;
-    /* background-color:rgb(216, 243, 253); a*/
-    background-color:#FFDCC8;
-    font-size: 20px;
+  height: 450px;
+  height: 100%;
+  /* background-color:rgb(216, 243, 253); a*/
+  background-color:#FFDCC8;
+  font-size: 20px;
 }
 
 
