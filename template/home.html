@@ -7,14 +7,13 @@
     <title>Django</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="{% static 'css\home.css' %}">
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> -->
     <script src="{% static 'js/main.js' %}"></script>
 </head>
 
 
 <body class="background">
 
-        
    <!--      <nav class="w3-bar w3-black">
                 <a href="#home" class="w3-button w3-bar-item">Início</a>
                 <a href="#hobbies" class="w3-button w3-bar-item">Hobbies</a>
@@ -22,7 +21,7 @@
                 <a href="#pets" class="w3-button w3-bar-item">Meus PETS</a>
                  <a href="#home" class="w3-button w3-bar-item" onclick="contato()">Contato</a>
         </nav> -->
-        
+
 
         <ul class="menu">
             <li class="li"><a href="#home">Início</a></li>
@@ -50,7 +49,7 @@
 
         <ul class="ul">
 
-                <li>Viajar</li>
+                <!-- <li>Viajar</li>
                 <li>Codar</li>
                 <li>Me exercitar</li>
                 <li>Mindfullness</li>
@@ -58,7 +57,10 @@
                 <li>Assistir Filmes e Séries</li>
                 <li>Aprender coisas novas</li>
                 <li>Ler antes de dormir</li>
-                <li>Conversar com amigos</li>
+                <li>Conversar com amigos</li> -->
+                {% for pessoa in pessoas %}
+                     <li> {{pessoa.hobbie}} </li>
+                {% endfor %}
 
                 </ul>
 </div>
@@ -70,9 +72,13 @@
 
         <ul class="ul" id="Series">
             <br>
-            <li>The good place</li>
+            <!-- <li>The good place</li>
             <li>Jack Ryan</li>
-            <li>La casa de papel</li>
+            <li>La casa de papel</li> -->
+            {% for pessoa in pessoas %}
+            <li> {{pessoa.serie}} </li>
+            {% endfor %}
+
 
             </ul>
 </div>
@@ -101,19 +107,19 @@
 
 
 
-<footer class="footer" id="contato"> <strong> contato: dhac@cin.ufpe.br </strong> </footer>
+<footer class="footer" id="contato"> <b>contato: dhac@cin.ufpe.br</b>  </strong> </footer>
 
 
 
- <h1 align="center"> Hello World !</h1>
+<!--  <h1 align="center"> Hello World !</h1>
 {% for pessoa in pessoas %}
     <h2> Nome: {{ pessoa.serie }}</h2>
-   <!--  <p> CPF {{pessoa.cpf}} </p>
+     <p> CPF {{pessoa.cpf}} </p>
     {% if pessoa.email  %}
         <p>E-mail: {{pessoa.email}} </p>
-    {% endif %} -->
+    {% endif %}
 {% endfor %}
-
+ -->
 
 </body>
 </html>

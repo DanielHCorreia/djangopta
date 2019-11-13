@@ -52,12 +52,14 @@ body {margin:0;}
 
 
 .footer {
-    position: flex;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#32092B;
-    color: rgb(235, 207, 207);
+    font-size:18px;
+    background-color:#ff952b; /* sasas */
+    height: 30px;
+    color:#8B002A;
     text-align: center;
   }
 
@@ -99,7 +101,7 @@ body {margin:0;}
 }
 
 
-.bottombar{
+.fixedbottombar{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -180,7 +182,7 @@ color:red;
 
 .parallax3 {
     /* The image used */
-    background-image: url("../imagens/gato.png");
+    background-image: url("../imagens/gato3.jpg");
     /* Set a specific height */
     min-height: 500px;
     /* Create the parallax scrolling effect */

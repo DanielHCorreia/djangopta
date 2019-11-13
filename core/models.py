@@ -4,9 +4,9 @@ from django.db import models
 
 #criando entidade Pessoa (feito um tipo)
 class Pessoa(models.Model):
-    serie = models.CharField('Series',max_length=100)
-    hobbie = models.CharField('Hobbies',max_length=100)
-    emailContato = models.EmailField('Email',null=True)
+    serie = models.CharField('Series',max_length=100,blank=True)
+    hobbie = models.CharField('Hobbies',max_length=100,blank=True)
+
 
     #Usado para ajustar o plural
     class Meta:
