@@ -4,18 +4,18 @@ from django.db import models
 
 #criando entidade Pessoa (feito um tipo)
 class Pessoa(models.Model):
-    name = models.CharField('Nome completo',max_length=100)
-    cpf = models.IntegerField('CPF',primary_key=True)
-    email = models.EmailField('Email',null=True)
+    serie = models.CharField('Series',max_length=100)
+    hobbie = models.CharField('Hobbies',max_length=100)
+    emailContato = models.EmailField('Email',null=True)
 
     #Usado para ajustar o plural
     class Meta:
-        ordering = ['name']
+        ordering = ['serie']
         verbose_name = 'Pessoa'
         verbose_name_plural = 'Pessoas'
     #Retorna o nome
     def __str__(self):
-        return self.name
+        return self.serie
 
 """ class Cliente(models.Model):
     nome = models.CharField('Nome completo',max_length=100)
