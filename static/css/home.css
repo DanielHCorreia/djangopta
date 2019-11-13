@@ -43,11 +43,23 @@ body {margin:0;}
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
+  font-size:17px;
 }
 
 .li a:hover{
   background-color: #ff952b;
 }
+
+
+.footer {
+    position: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#32092B;
+    color: rgb(235, 207, 207);
+    text-align: center;
+  }
 
 
 .imagem{
